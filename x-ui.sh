@@ -160,7 +160,7 @@ update() {
         fi
         return 0
     fi
-    bash <(curl -Ls https://raw.githubusercontent.com/MHSanaei/3x-ui/main/install.sh)
+    bash <(curl -Ls https://raw.githubusercontent.com/thaiptit/Apanel//main/install.sh)
     if [[ $? == 0 ]]; then
         LOGI "Cập nhật hoàn tất, Bảng điều khiển đã tự động khởi động lại"
         exit 0
@@ -178,7 +178,7 @@ update_menu() {
         return 0
     fi
 
-    wget --no-check-certificate -O /usr/bin/x-ui https://raw.githubusercontent.com/MHSanaei/3x-ui/main/x-ui.sh
+    wget --no-check-certificate -O /usr/bin/x-ui https://raw.githubusercontent.com/thaiptit/Apanel//main/x-ui.sh
     chmod +x /usr/local/x-ui/x-ui.sh
     chmod +x /usr/bin/x-ui
 
@@ -206,7 +206,7 @@ custom_version() {
         exit 1
     fi
 
-    download_link="https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh"
+    download_link="https://raw.githubusercontent.com/thaiptit/Apanel/master/install.sh"
 
     # Sử dụng phiên bản bảng điều khiển đã nhập vào liên kết tải xuống
     install_command="bash <(curl -Ls $download_link) v$tag_version"
@@ -239,7 +239,7 @@ uninstall() {
     echo ""
     echo -e "Đã gỡ cài đặt thành công.\n"
     echo "Nếu bạn cần cài đặt lại bảng điều khiển này, bạn có thể sử dụng lệnh dưới đây:"
-    echo -e "${green}bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh)${plain}"
+    echo -e "${green}bash <(curl -Ls https://raw.githubusercontent.com/thaiptit/Apanel/master/install.sh)${plain}"
     echo ""
     trap delete_script SIGTERM
     delete_script
