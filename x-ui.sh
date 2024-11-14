@@ -141,7 +141,7 @@ before_show_menu() {
 }
 
 install() {
-    bash <(curl -Ls https://raw.githubusercontent.com/MHSanaei/3x-ui/main/install.sh)
+    bash <(curl -Ls https://raw.githubusercontent.com/thaiptit/Apanel/main/install.sh)
     if [[ $? == 0 ]]; then
         if [[ $# == 0 ]]; then
             start
@@ -160,7 +160,7 @@ update() {
         fi
         return 0
     fi
-    bash <(curl -Ls https://raw.githubusercontent.com/thaiptit/Apanel//main/install.sh)
+    bash <(curl -Ls https://raw.githubusercontent.com/thaiptit/Apanel/main/install.sh)
     if [[ $? == 0 ]]; then
         LOGI "Cập nhật hoàn tất, Bảng điều khiển đã tự động khởi động lại"
         exit 0
@@ -178,7 +178,7 @@ update_menu() {
         return 0
     fi
 
-    wget --no-check-certificate -O /usr/bin/x-ui https://raw.githubusercontent.com/thaiptit/Apanel//main/x-ui.sh
+    wget --no-check-certificate -O /usr/bin/x-ui https://raw.githubusercontent.com/thaiptit/Apanel/main/x-ui.sh
     chmod +x /usr/local/x-ui/x-ui.sh
     chmod +x /usr/bin/x-ui
 
@@ -515,7 +515,7 @@ enable_bbr() {
 }
 
 update_shell() {
-    wget -O /usr/bin/x-ui -N --no-check-certificate https://github.com/MHSanaei/3x-ui/raw/main/x-ui.sh
+    wget -O /usr/bin/x-ui -N --no-check-certificate https://github.com/thaiptit/Apanel/raw/main/x-ui.sh
     if [[ $? != 0 ]]; then
         echo ""
         LOGE "Không thể tải xuống script, Vui lòng kiểm tra xem máy có thể kết nối với Github không"
