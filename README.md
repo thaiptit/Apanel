@@ -447,22 +447,22 @@ The web panel supports daily traffic, panel login, database backup, system statu
 ### Setting up Telegram bot
 
 - Start [Botfather](https://t.me/BotFather) in your Telegram account:
-    ![Botfather](./media/botfather.png)
+    ![Botfather]
 
 - Create a new Bot using /newbot command: It will ask you 2 questions, A name and a username for your bot. Note that the username has to end with the word "bot".
-    ![Create new bot](./media/newbot.png)
+    ![Create new bot]
 
 - Start the bot you've just created. You can find the link to your bot here.
-    ![token](./media/token.png)
+    ![token]
 
 - Enter your panel and config Telegram bot settings like below:
-![Panel Config](./media/panel-bot-config.png)
+![Panel Config]
 
 Enter your bot token in input field number 3.
 Enter the user ID in input field number 4. The Telegram accounts with this id will be the bot admin. (You can enter more than one, Just separate them with ,)
 
 - How to get Telegram user ID? Use this [bot](https://t.me/useridinfobot), Start the bot and it will give you the Telegram user ID.
-![User ID](./media/user-id.png)
+![User ID]
 
 </details>
 
