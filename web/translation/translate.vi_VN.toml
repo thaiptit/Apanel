@@ -70,8 +70,8 @@
 "link" = "Quản lý"
 
 [pages.login]
-"hello" = "Xin chào"
-"title" = "Chào mừng"
+"hello" = "Admin"
+"title" = "Panel"
 "loginAgain" = "Thời hạn đăng nhập đã hết. Vui lòng đăng nhập lại."
 
 [pages.login.toasts]
