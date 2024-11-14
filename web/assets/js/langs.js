@@ -80,7 +80,7 @@ function getLang() {
 
 function setLang(lang) {
 	if (!isSupportLang(lang)) {
-		lang = "en-US";
+		lang = "vi-VN";
 	}
 
 	setCookie("lang", lang, 150);
